@@ -19,11 +19,11 @@ public class Car {
         this.isCurrentlyBeingSold = isCurrentlyBeingSold;
     }
 
-    public static void startCar() {
+    public void startCar() {
         System.out.println("Auto wurde gestartet");
     }
 
-    public static void increaseCarSpeed(String owner, int speed) {
+    public void increaseCarSpeed() {
         speed += 5;
 
         System.out.println( "Das Auto von " + owner + " wurde beschleunigt auf " + speed + " km/h");

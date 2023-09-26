@@ -5,12 +5,12 @@ public class Main {
         Car dominicsCar = new Car("Dominic", "Van", "white", 2010, 200, true);
         Car enricosCar = new Car("Enrico", "onlyOne", "grey", 1989, 100, false);
 
-        Car.startCar();
-        Car.increaseCarSpeed(dominicsCar.owner,dominicsCar.speed);
+        dominicsCar.startCar();
+        dominicsCar.increaseCarSpeed();
         System.out.println(dominicsCar.speed);
 
-        Car.startCar();
-        Car.increaseCarSpeed(enricosCar.owner,enricosCar.speed);
+        enricosCar.startCar();
+        enricosCar.increaseCarSpeed();
         System.out.println(enricosCar.speed);
 
 
