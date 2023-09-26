@@ -3,15 +3,15 @@ package org.example;
 import java.awt.*;
 
 public class Car {
-    public String brand;
+    public String owner;
     public String model;
     public String color;
     public int buildYear;
     public int speed;
     public boolean isCurrentlyBeingSold;
 
-    public Car(String brand, String model, String color, int buildYear, int speed, boolean isCurrentlyBeingSold) {
-        this.brand = brand;
+    public Car(String owner, String model, String color, int buildYear, int speed, boolean isCurrentlyBeingSold) {
+        this.owner = owner;
         this.model = model;
         this.color = color;
         this.buildYear = buildYear;
@@ -23,9 +23,9 @@ public class Car {
         System.out.println("Auto wurde gestartet");
     }
 
-    public static void increaseCarSpeed(int speed) {
+    public static void increaseCarSpeed(String owner, int speed) {
         speed += 5;
 
-        System.out.println("Auto wurde beschleunigt auf " + speed + " km/h");
+        System.out.println( "Das Auto von " + owner + " wurde beschleunigt auf " + speed + " km/h");
     }
 }
